@@ -1,4 +1,4 @@
--- drop schema if exists random_jg214_f;create schema random_jg214_f;use random_jg214_f;
+drop schema if exists world1;create schema world1;use world1;
 
 # random number generator (syntax: random(x,y)  Ex: select random(1,100))
 drop function if exists random;
