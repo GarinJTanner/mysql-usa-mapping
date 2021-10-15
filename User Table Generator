@@ -1,4 +1,6 @@
-drop schema if exists random_jg214_f;create schema random_jg214_f;use random_jg214_f;
+-- Make sure to run Locations script first.
+
+use random_jg214_f;
 
 # random number generator (syntax: random(x,y)  Ex: select random(1,100))
 DELIMITER //
