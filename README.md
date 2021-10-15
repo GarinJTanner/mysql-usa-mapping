@@ -1,2 +1,2 @@
-# MySQL Random users and real locations
+# MySQL Random users, user devices, and real locations
 
