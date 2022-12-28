@@ -1,4 +1,4 @@
-create table locations (id int auto_increment primary key, longitude decimal(12,6), latitude(11,6), location varchar(50)) engine=innodb;
+create table locations (id int auto_increment primary key, longitude decimal(12,6), latitude decimal(11,6), location varchar(50)) engine=innodb;
 insert into locations (longitude,latitude,location) VALUES 
 ('-86.73313','33.44722','Shake Shack-Birmingham'),
 ('-111.7426383','33.306925','Shake Shack-Gilbert'),
