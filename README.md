@@ -12,10 +12,11 @@ Run the scripts in this order:
 A table holding every city and zip code in the United States, with their respective GPS coordinate. 
 
 ## Counties
-A table of multipolygon blobs. Using latitude and longitude coordinates, they draw the outline of counties. 
+A table of multipolygon 'blobs.' Using latitude and longitude coordinates, these blobs draw the outline of counties. 
 
 ## Usergen
-Creates a table of random people. It will contain only a name, IP address and zip code for now.
+Creates a table of random people. It will contain only a name, IP address and zip code until you run the next script.
 
 ## gps_from_zip
-Using the zip code, this procedure will assign a city, state, county and latitude/longitude coordinate to each user.
+Using the zip code, this procedure will assign a city, state, county and latitude/longitude coordinates to each user.
+
