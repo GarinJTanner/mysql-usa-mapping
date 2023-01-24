@@ -34,7 +34,7 @@ create table users (id int primary key auto_increment, username varchar(50), fla
 create index users on users (username,birthday,IP_address,latitude,longitude);
 create index user_devices on user_devices (device_id,user_id); 
 
-drop procedure usertable;
+drop procedure if exists usertable;
 DELIMITER $$;
 CREATE PROCEDURE usertable()
 
