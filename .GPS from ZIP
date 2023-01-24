@@ -1,0 +1,12 @@
+# GPS from ZIP
+Automate the creation of a GIS enabled database. From a Google Form to MySQL. 
+
+## Creating a Google Form
+1. Log into Google Drive and create a form. To keep this simple for now, let's just request two things: a zip code and a travel distance.
+2. Click on the 'responses' tab at the top. Then, click on the green icon labeled 'link to sheets.' Create a new sheet then open.
+3. At the top, click on 'share.' Set the general access level to 'anyone with the link.'
+4. Go back to the Form editor and click 'send' at the top right. Send the link to yourself and put in five entries. Make each one different.
+
+## Setting up the Python environment
+1. 
+2. 
