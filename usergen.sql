@@ -34,9 +34,9 @@ create table users (id int primary key auto_increment, username varchar(50), ip_
 create index users on users (id,username,IP_address,city,zip,state,county,latitude,longitude);
 create index user_devices on user_devices (device_id,user_id); 
 
-drop procedure if exists usertable;
+drop procedure if exists usergen;
 DELIMITER $$;
-CREATE PROCEDURE usertable()
+CREATE PROCEDURE usergen()
 
 BEGIN
 DECLARE i,$user_id,$count,$device_id INT default 1;
@@ -65,4 +65,4 @@ set i = i + 1;
 END WHILE;
 END $$;
 DELIMITER ;
-call usertable;
+call usergen;
