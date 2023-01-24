@@ -8,11 +8,8 @@ Run the scripts in this order:
 3. usergen.sql
 4. gps_from_zip.sql
 
-## Locations
-A basic table of 265 Shake Shack locations. No index is needed for smaller tables.
-
 ## USA 
-A table holding every city and zip code with their respective GPS coordinate. A powerful tool that I have used to pull a GPS coordinate based on a ZIP code. It is much easier to ask someone for their ZIP code than to ask them to give their coordinates.
+A table holding every city and zip code in the United States, with their respective GPS coordinate. 
 
 ## Counties
 A table of multipolygon blobs. Using latitude and longitude coordinates, they draw the outline of counties. 
