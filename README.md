@@ -18,4 +18,4 @@ A table of multipolygon blobs. Using latitude and longitude coordinates, they dr
 Creates a table of random people. It will contain only a name, IP address and zip code for now.
 
 ## gps_from_zip
-Using the zip code, it will assign a city, state, county and latitude/longitude coordinates.
+Using the zip code, this procedure will assign a city, state, county and latitude/longitude coordinate to each user.
