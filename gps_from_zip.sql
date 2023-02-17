@@ -15,9 +15,9 @@ myloop : loop
 
 set $zip = (select zip from users where id = $user_int);
 set $lat = (select latitude from usa where zip = $zip),
-	  $long = (select longitude from usa where zip = $zip),
+    $long = (select longitude from usa where zip = $zip),
     $city = (select city from usa where zip = $zip),
-	  $state = (select state from usa where zip = $zip);
+    $state = (select state from usa where zip = $zip);
 set $county = (SELECT (name) FROM counties WHERE st_contains(the_geom,point($long,$lat)));
 
 update users set latitude = $lat, longitude = $long, city = $city, county = $county, state = $state where id = $user_int;
