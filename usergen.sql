@@ -11,19 +11,6 @@ return str;
 END //
 DELIMITER ;
 
-# For randomizing the decimal value in lat/long coords
-drop function if exists randomoffset;
-DELIMITER //
-create function randomoffset()
-returns float
-deterministic
-begin 
-DECLARE str float;
-SET str = round(rand() * 1 + 0.01, 6); 
-return str;
-END //
-DELIMITER ;
-
 drop table if exists users; 
 drop table if exists devices;
 drop table if exists user_devices;
