@@ -15,7 +15,7 @@ A table holding every city and zip code in the United States, with their respect
 A table of multipolygon 'blobs.' Using latitude and longitude coordinates, these blobs draw the outline of counties. 
 
 ## Usergen
-Creates a table of random people. It will contain only a name, IP address and zip code until you run the next script.
+Creates a table of fake people. It will contain only a name, IP address and zip code until you run the next script.
 
 ## gps_from_zip
 Using the zip code, this procedure will assign a city, state, county and latitude/longitude coordinates to each user.
