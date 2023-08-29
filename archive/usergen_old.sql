@@ -25,7 +25,6 @@ END //
 DELIMITER ;
 drop table if exists users; drop table if exists locations;drop table if exists devices;drop table if exists user_devices;
 create table locations (id int primary key auto_increment, latitude decimal(11,6), longitude decimal(12,6),point point as (point(longitude,latitude)),location varchar(100)) engine=innodb;
-create index point on locations (point);
 create index gps on locations(latitude, longitude);
 insert into locations (latitude,longitude,location) VALUES 
 ('33.24375','-86.81862','Siluria Brewing'),
