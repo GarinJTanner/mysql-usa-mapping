@@ -38,7 +38,7 @@ DECLARE $ip_address,$fullname,$random_zip,$zip VARCHAR(50);
 WHILE i != 50 DO
 set $fullname = concat((substring_index(substring_index($first, ',',(floor(1+(rand()*1000)))),',',-1)),' ',(substring_index(substring_index($last,',',(floor(1+(rand()*1000)))),',',-1))),
   
-        $ip_address = concat('162.137.82.',random_range(1,255)),
+        $ip_address = concat('162.137.82.',random_int(1,255)),
         $device_id = random_int(1,7358),
         $random_zip = random_int(1,41720),
         $zip = (select zip from usa where id = $random_zip);
